@@ -1,0 +1,22 @@
+name: Daily Ping URLs
+
+on:
+  schedule:
+    - cron: "0 17 * * *"
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Ping URLs
+        run: |
+          curl -I https://risetkami-gradio.hf.space
+          curl -I https://risetkami-risetkami.hf.space
+          curl -I https://risetkami-drowsy.hf.space
+          curl -I https://esadhipaaaa-uascomvis.hf.space
+          curl -I https://calandhika-drowsy.hf.space
+          curl -I https://rahayuningpuspita-deteksi-objek-sepakbola.hf.space
+          curl -I https://ameliafridaa-cv-uas.hf.space
+          curl -I https://ivann043-mhr-clasification.hf.space

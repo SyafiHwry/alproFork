@@ -16,7 +16,7 @@ struct List {
     Qnode* rear;
 };
 
-// Inisialisasi queue
+// Inisialisasi queue 10 20 30
 List queue = {nullptr, nullptr,nullptr};
 
 // Fungsi untuk mengecek apakah queue kosong

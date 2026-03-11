@@ -24,12 +24,13 @@ bool IsEmpty() {
 }
 
 // Fungsi untuk mengecek apakah queue penuh (tidak relevan untuk linked list, jadi selalu false)
-bool IsFull() {
+bool IsFull(int maks) {
     return false;
 }
 
 // Fungsi untuk enqueue (menambahkan elemen di awal queue)
 void Enqueue(int data) {
+
     Qnode* newNode = new Qnode;
     newNode->data = data;
     newNode->next = queue.head;
@@ -57,7 +58,7 @@ void Dequeue() {
 
     if (queue.head->next == nullptr) { // Jika hanya ada satu elemen di queue
         cout << "Dequeued 1: " << queue.rear->data << endl;
-        Qnode* temp = queue.head;
+        // Qnode* temp = queue.head;
         queue.head = nullptr;
         queue.rear = nullptr;
         queue.front = nullptr;

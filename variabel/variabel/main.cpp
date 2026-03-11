@@ -16,6 +16,7 @@ void Foo()
         localVar, mGlobalVar);
 }
 
+
 static int s_iGlobalStatic;
 
 void static_foo()
