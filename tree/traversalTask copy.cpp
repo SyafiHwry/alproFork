@@ -91,14 +91,14 @@ private:
         cout << node->val << " ";
     }
 
-    ListNode* placing(ListNode*& root, int value) {
+    ListNode* binarySearch(ListNode*& root, int value) {
         ListNode* newNode = new ListNode(value);
         if(root == nullptr) return newNode;
 
         if(value < root->val) {
-            root->prev = placing(root->prev, value);
+            root->prev = binarySearch(root->prev, value);
         } else if(value > root->val) {
-            root->next = placing(root->next, value);
+            root->next = binarySearch(root->next, value);
         }
         return root;
     }
@@ -132,7 +132,7 @@ public:
         for(int i = 0; i < jumlah; i++) {
             cout << "Masukkan data: ";
             cin >> data;
-            root = placing(root, data);
+            root = binarySearch(root, data);
         }
     }
 };
