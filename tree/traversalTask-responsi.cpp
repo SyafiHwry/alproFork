@@ -182,18 +182,6 @@ int main() {
 
     cout << "\n=== BFS / Level Order ===" << endl;
     obj.outputBfs();
-    /*
-     * Level 0 : H
-     * Level 1 : A K
-     * Level 2 : C
-     */
-
-    // Bebaskan memori
-    // delete root->prev->next;
-    // delete root->prev;
-    // delete root->next;
-    // delete root;
-    // delete obj.inputList(root);
-
+    
     return 0;
 }
