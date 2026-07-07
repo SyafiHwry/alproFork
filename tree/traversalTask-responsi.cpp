@@ -1,4 +1,5 @@
 #include <iostream>
+#include "learnTree.cpp"
 using namespace std;
 
 struct ListNode {
@@ -153,6 +154,7 @@ int main() {
 
     Tree obj;
 
+    tampil();
     obj.inputList(root);
     // obj.displayList(root);
 
